@@ -1,0 +1,55 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./navbar.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Title</title>
+</head>
+
+<!----------------------------------------------------------------------------------------------
+This website is a recreated version from one of Danny's previous projects.
+http://www.danny.informatikk4.net/Oppgaver/6%20-%20Elektrisk%20Sparkesykkel/index_ELSS.html
+------------------------------------------------------------------------------------------------
+The navigation bar is recreated from w3school's Responsive Navigation Bar.
+https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+----------------------------------------------------------------------------------------------->
+
+<body>
+<img src="./tree1.jpg" id="mainbg"></img>
+<div class="topnav" id="myTopnav">
+	<a href="./index.html" id="home">Home</a>
+	<a href="./work.html">Our Work</a>
+	<a href="./goal.html">The Goal</a>
+	<a href="./pictures.html">Pictures</a>
+	<a id="name">Organisation</a>
+
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	</a>
+</div>
+<div id="info">.</div>
+<center>
+	<h1 id="maintitle">Pictures</h1>
+
+	<div id="image-sector">
+		<img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" id="bilde1" class="image"></img>
+		<img src="https://images.pexels.com/photos/3831187/pexels-photo-3831187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" id="bilde2" class="image"></img>
+		<img src="https://images.pexels.com/photos/296282/pexels-photo-296282.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" id="bilde3" class="image"></img>
+		<img src="https://images.pexels.com/photos/401213/pexels-photo-401213.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" id="bilde4" class="image"></img>
+	</div>
+</center>
+<script>
+function myFunction() {
+var nav = document.getElementById("myTopnav");
+	if (nav.className === "topnav") {
+		nav.className += " responsive";
+	}
+	else {
+		nav.className = "topnav";
+	}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: whitesmoke;
+	font-family: HelveticaNeue, Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+#mainbg {
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 55px;
+	max-width: 100%;
+	height: auto;
+	border-bottom: 3px solid black;
+	z-index: -2;
+}
+
+/* INDEX */
+#maintitle {
+	position: relative;
+	top: 20.8vw;
+	max-width: 40%;
+	padding: 15px 2vw;
+	color: white;
+	text-shadow: 0.18vw 0.18vw black;
+	background-color: #009900;
+	border: 2px solid black;
+	border-radius: 30px;
+	font-size: 4vw;
+}
+#info { position:absolute; top:49.667vw; opacity:0.1; }
+#plan { position:absolute; top:1340px; opacity:0.1; }
+#bilder { position:absolute; top:2033px; opacity:0.1; }
+#kontakt { position:absolute; top:3100px; opacity:0.1; }
+
+/* TITLE */
+#info-title {
+	position: relative;
+	top: 41.2vw;
+	width: 32vw;
+	padding: 13px 0;
+	color: white;
+	background-color: #009900;
+	border: 2px solid black;
+	border-radius: 30px;
+	font-size: 2.8vw;
+}
+
+/* ABOUT US */
+#info-boks {
+	position: relative;
+	top: 41.8vw;
+	height: 26vw;
+	width: 34.7vw;
+	padding: 0.4vw 2.8vw;
+	background-color: #b3ffb3;
+	border: 2px solid black;
+	border-radius: 20px;
+	font-size: 1.4vw;
+	text-align: left;
+	line-height: 1;
+	margin-bottom: 3vw;
+}
+#info-bilde {
+	position: relative;
+	top: 41.8vw;
+	height: 26.8vw;
+	width: 40.3vw;
+	border: 2px solid black;
+	border-radius: 20px;
+	background-color: grey;
+}
+#left-info { position:relative; width:45%; float:left; margin-bottom: 50px;}
+#right-info { position:relative; width:45%; float:left; margin-bottom: 50px;}
+#side-info { position:relative; width:5%; float:left;}
+
+
+/* PICTURES */
+#image-sector { float:left; position:relative; top:41.2vw; margin-bottom: 5vw;}
+.image {
+	height: 26.8vw;
+	width: 40.3vw;
+	background-color: grey;
+	border: 2px solid black;
+	border-radius: 20px;
+	margin: 25px 25px;
+}
+
+@media only screen and (max-width:600px) {
+  /* For mobile phones: */
+	#left-info, #right-info, #side-info { width:100%; }
+	#info-title { top: 47.6vw; }
+	#info-boks { top: 47.2vw; width:54.4vw; height: 37vw; margin-bottom: -2vw; font-size:2vw;}
+	#info-bilde { top: 46vw; width:60vw; height: 38.8vw; margin-bottom: 42vw;}
+	
+	#image-sector { float:left; position:relative; top:48.2vw; margin-bottom: 8vw;}
+	.image { width:70vw; height:48.8vw; margin:15px 15px; }
+	
+	#maintitle { top: 29.1vw; }
+}
