@@ -1,0 +1,68 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./navbar.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Memoriae</title>
+</head>
+
+<!----------------------------------------------------------------------------------------------
+This website is a recreated version from one of Danny's previous projects.
+http://www.danny.informatikk4.net/Oppgaver/6%20-%20Elektrisk%20Sparkesykkel/index_ELSS.html
+------------------------------------------------------------------------------------------------
+The navigation bar is recreated from w3school's Responsive Navigation Bar.
+https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+----------------------------------------------------------------------------------------------->
+
+<body>
+<img alt="papers-and-statictics-that-arent-important" src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" id="bg2" class="mainbg"></img>
+<div class="topnav" id="myTopnav">
+	<center>
+	<a href="./index.html" id="home">Home</a>
+	<a href="./work.html">Our Work</a>
+	<a href="./goal.html">The Goal</a>
+	<a id="name">Memoriae</a>
+	</center>
+
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	</a>
+</div>
+<div id="info">.</div>
+<center>
+	<h1 class="maintitle">Virtual Reality Glasses</h1>
+	<h1 id="info-title">More than just entertainment</h1>
+
+<div id="test-info">
+	<div id="side-info"><h1></h1></div>
+	<div id="left-info">
+		<div class="info-boks" id="box2">
+			<center><h2 id="title2">Increase health with technology</h2></center>
+			What we want for the future is to reduce Demetia by 90% by year of 2040. 
+			How we will do this, is by using VR glasses. 
+			This technology could help people in early stages of dementia where its 
+			potentially possible to cure the problem. We will show the patient 
+			pictures and VR videos of the persons childhood and life so far.
+		</div>
+	</div>
+	<div id="right-info">
+		<img alt="boy-with-vr-glasses" src="https://images.pexels.com/photos/4145356/pexels-photo-4145356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="info-bilde" id="bilde2"></img>
+	</div>
+	<div id="side-info"><h1></h1></div>
+</div>
+</center>
+<script>
+function myFunction() {
+var nav = document.getElementById("myTopnav");
+	if (nav.className === "topnav") {
+		nav.className += " responsive";
+	}
+	else {
+		nav.className = "topnav";
+	}
+}
+</script>
+</body>
+</html>
